@@ -1,0 +1,11 @@
+.profile{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+@media(max-width: 998px){
+	.profile{
+		padding: 3vw;
+	}
+}

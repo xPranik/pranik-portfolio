@@ -1,0 +1,118 @@
+.dialog a{
+    text-decoration: none;
+    color: #222;
+    display: flex;
+    padding: 7px 5px 7px 16px;
+    transition: all .2s ease-in-out;
+}
+
+.dialog_avatar{
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.dialog_avatar img{
+    object-fit: fill;
+    position: relative;
+}
+
+.dialog_body{
+    flex-grow: 1;
+    height: 44px;
+    overflow: hidden;
+    word-wrap: break-word;
+    transition: all .2s ease-in-out;
+}
+
+.dialog_name{
+    margin: 3px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #222;
+    font-size: 13px;
+    transition: all .2s ease-in-out;
+}
+.dialog_message{
+    font-size: 13px;
+    color: grey;
+    font-weight: 400;
+    margin-top: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.dialog_date{
+    font-size: 11px;
+    font-weight: 400;
+    color: #b3b3b3;
+    transition: all .2s ease-in-out;
+    white-space: nowrap;
+}
+
+.dialog a:hover{
+    background-color: #f5f7fa;
+}
+
+.dialog a:hover .dialog_date{
+    color: #b8d1e4;
+}
+
+.dialog a.active{
+    background-color: #6490b1;
+}
+
+.dialog a.active .dialog_name{
+    color: #fff;
+}
+
+.dialog a.active .dialog_message{
+    color: #fff;
+}
+.dialog a.active .dialog_date{
+    color: #fff;
+}
+
+@media(max-width: 764px){
+    .dialog a.active{
+        background-color: #f5f7fa;
+    }
+    .dialog a.active .dialog_name{
+        color: #000;
+    }
+    .dialog_date{
+        display: none;
+    }
+    .dialog_avatar{
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+    }
+    .dialog_name{
+        text-align: center;
+        font-size: 13px;
+    }
+    .dialog_message{
+        display: none;
+    }
+    .dialog_body{
+        height: auto;
+    }
+    .dialog a{
+        width: 70px;
+        overflow: hidden;
+        padding: 1vw 1vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar {
+        height: 6px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+}

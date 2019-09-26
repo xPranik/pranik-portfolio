@@ -1,0 +1,46 @@
+.app-container{
+  display: flex;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.app-wrapper{
+  background-color: #edeef0;
+  color: #000;
+  min-height: 100vh;
+}
+
+.app-content{
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+@media (max-width: 998px) {
+  .app-container{
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 13vw;
+  }
+  .app-content{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+  }
+}

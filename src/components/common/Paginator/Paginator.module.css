@@ -1,0 +1,25 @@
+.pagination{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 15px 0;
+}
+.pagination span{
+	margin: 2px;
+	padding: 3px;
+	color: #5181b8;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.pagination span.active{
+	background-color: #5181b8;
+	color: #fff;
+}
+
+.pagination__button{
+	color: #5181b8;
+	padding: 3px;
+	cursor: pointer;
+}

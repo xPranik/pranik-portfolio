@@ -1,0 +1,85 @@
+.inputWrap{
+	width: 100%;
+	display: flex;
+}
+
+.form__input_profile{
+	height: 20px;
+	font-size: 12px;
+	padding: 3px 5px 3px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	border: 1px solid #d3d9de;
+	background: #fff;
+	width: 300px;
+}
+
+.form__input{
+	height: 35px;
+	width: 100%;
+	font-size: 14px;
+	padding: 6px 12px 8px;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border: 1px solid #d3d9de;
+	color: #000;
+}
+.form__input_checkbox{
+	box-shadow: none;
+	border: 1px solid #d3d9de;
+	width: 20px;
+	height: 20px;
+}
+.form__input_file{
+	padding: 7px 16px 8px;
+	margin: 0;
+	font-size: 12.5px;
+	display: inline-block;
+	zoom: 1;
+	cursor: pointer;
+	white-space: nowrap;
+	outline: none;
+	vertical-align: top;
+	line-height: 15px;
+	text-align: center;
+	text-decoration: none;
+	background: none;
+	background-color: #5181b8;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.form__input_textarea{
+	height: 50px;
+	padding: 3px 5px;
+	border: 1px solid #d3d9de;
+	max-height: 150px;
+	width: 300px;
+	border-radius: 3px;
+}
+.form__input_checkbox{
+	width: 15px;
+	height: 15px;
+}
+
+.formControl.error input,
+.formControl.error textarea{
+	border: 1px solid red;
+}
+
+.formControl.error span{
+	color: red;
+}
+
+@media (max-width: 764px) {
+	.form__input_textarea,
+	.form__input_profile{
+		max-width: 300px;
+		width: 100%;
+		font-size: 13px;
+	}
+}
