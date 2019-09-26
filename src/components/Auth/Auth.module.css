@@ -41,6 +41,30 @@
 	text-align: center;
 	border: 1px solid darkred;
 }
+.demo{
+	margin-top: 10px;
+}
+.demo_btn{
+	font-size: 13px;
+	color: #5181b8;
+	cursor: pointer;
+	text-align: center;
+
+}
+.credentials{
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+.credentials__row{
+	display: flex;
+	align-items: center;
+}
+.credentials__row span{
+	width: 50%;
+}
 @media(max-width: 998px){
 	.auth_form{
 		margin: 15px;
